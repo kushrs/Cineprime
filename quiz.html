@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Quiz - CinePrime</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="quiz.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">CinePrime</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="watchlist.html">My Watchlist</a>
+      <a href="quiz.html" class="active">Movie Quiz</a>
+      <a href="login.html" id="login-link">Login</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+  </header>
+  
+  <main>
+    <div class="quiz-container">
+      <h2>Movie Trivia Quiz</h2>
+      <div id="quiz-question" class="quiz-question">
+        <h3 id="question-text">Loading question...</h3>
+        <div id="options-container" class="options-container">
+          <!-- Options will be added here -->
+        </div>
+      </div>
+      <div class="quiz-controls">
+        <p id="score-display">Score: 0</p>
+        <button id="next-question" class="btn" disabled>Next Question</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Powered by OMDb API | Created by CinePrime &copy; 2023</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
+
